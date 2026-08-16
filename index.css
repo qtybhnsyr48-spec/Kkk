@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cairo: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-amiri: "Amiri", serif;
+  --color-navy: #1a1208;
+  --color-ink: #24180c;
+  --color-gold: #d4a017;
+  --color-gold-soft: #e8c56a;
+  --color-clay: #b4532a;
+  --color-sand: #f6efe3;
+  --color-cream: #fbf7f0;
+  --color-terracotta: #c45c26;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  background: #fbf7f0;
+  color: #24180c;
+  margin: 0;
+  min-height: 100vh;
+}
+
+::selection {
+  background: #d4a017;
+  color: #1a1208;
+}
+
+.font-amiri {
+  font-family: "Amiri", serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pattern-waves {
+  background-image: radial-gradient(circle at 1px 1px, rgba(212,160,23,0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}
